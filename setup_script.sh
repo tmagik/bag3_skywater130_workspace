@@ -55,6 +55,10 @@ ln -s BAG_framework/run_scripts/dsn_cell.sh .
 ln -s ${BAG_TEMP_DIR}/simulations/gen_outputs gen_outputs_scratch
 ln -s ${BAG_TEMP_DIR}/calibre_run calibre_run
 
+# do not install non-DFSG cadence libs
+echo "skipping cadence library links"
+exit 0
+
 # setup cadence shared library linkage
 mkdir cadence_libs
 
